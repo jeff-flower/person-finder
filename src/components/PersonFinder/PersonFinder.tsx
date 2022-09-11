@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {ChangeEvent, useState, useMemo} from 'react';
 import PersonList from './PersonList';
 
 export interface Person {
@@ -14,6 +14,14 @@ type PersonFinderProps = {
 
 const PersonFinder = ({people}: PersonFinderProps) => {
   const [searchText, setSearchText] = useState("");
+  
+  const filteredPeople = useMemo(() => {
+    if (searchText) {
+      return people.filter((person: Person) => person.name.startsWith(searchText));
+    }
+
+    return [...people];
+  }, [people, searchText]);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchText(e.target.value);
@@ -27,7 +35,7 @@ const PersonFinder = ({people}: PersonFinderProps) => {
         value={searchText}
         onChange={handleInputChange}
       />
-      <PersonList people={people}/>
+      <PersonList people={filteredPeople}/>
     </section>
   );
 }
