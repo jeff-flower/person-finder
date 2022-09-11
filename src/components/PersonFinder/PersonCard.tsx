@@ -1,16 +1,16 @@
 import React from 'react';
+import {Person} from './PersonList';
 
-// {"id":1,"name":"Dyanna Cullingford","email":"dcullingford0@nba.com","avatar":"https://robohash.org/rerumliberoamet.png?size=200x200&set=set1","description":"Nondisplaced fracture of lower epiphysis (separation) of left femur, initial encounter for closed fracture"},
+type PersonCardProps = {
+  person: Person
+};
 
-function PersonCard() {
-  return (
-    <div>
-      <img src="https://robohash.org/rerumliberoamet.png?size=200x200&set=set1" alt=""></img>
-      <p>Dyanna Cullingford</p>
-      <p>Nondisplaced fracture of lower epiphysis (separation) of left femur, initial encounter for closed fracture</p>
-    </div>
-  );
-} 
+const PersonCard = ({person}: PersonCardProps) => 
+  <div>
+    <img src={person.avatar} alt=""></img>
+    <p>{person.name}</p>
+    <p>{person.description}</p>
+  </div>
 
 export default PersonCard;
 
