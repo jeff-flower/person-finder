@@ -6,9 +6,9 @@ type PersonCardProps = {
 };
 
 const PersonCard = ({person}: PersonCardProps) => 
-  <div>
-    <img src={person.avatar} alt=""></img>
-    <p>{person.name}</p>
+  <div >
+    <img src={person.avatar} alt=""/>
+    <h2>{person.name}</h2>
     <p>{person.description}</p>
   </div>
 

@@ -27,10 +27,12 @@ const PersonFinder = ({people}: PersonFinderProps) => {
     setSearchText(e.target.value);
   };
 
+  // TODO: wrap input with form?
   return (
     <section>
       <input
         type="search"
+        name="personSearch"
         placeholder="Search in Air HQ"
         value={searchText}
         onChange={handleInputChange}
