@@ -1,14 +1,6 @@
 import React from 'react';
 import PersonCard from './PersonCard';
-
-// props: list of people to display
-
-export interface Person {
-  id: number;
-  name: string;
-  avatar: string;
-  description: string;
-}
+import {Person} from './PersonFinder';
 
 type PersonListProps = {
   people: Person[];
@@ -16,7 +8,7 @@ type PersonListProps = {
 
 const PersonList = ({people}: PersonListProps) => {
   const personItems = people.map((person) => 
-    <li>
+    <li key={person.id}>
       <PersonCard person={person}/>
     </li>
   );

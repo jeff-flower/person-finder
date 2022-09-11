@@ -1,5 +1,5 @@
 import React from 'react';
-import {Person} from './PersonList';
+import {Person} from './PersonFinder';
 
 type PersonCardProps = {
   person: Person
