@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './assets/rAir.svg';
 import PersonFinder from './components/PersonFinder';
-import mockPeople from './mockData.json';
+import mockPeople from './assets/mockData.json';
 
+// TODO: clean up html, use header and main and section, remove div
 function App() {
   return (
     <div className="App">
