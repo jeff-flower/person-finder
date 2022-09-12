@@ -7,6 +7,10 @@ type PersonCardProps = {
   person: Person
 };
 
+/** 
+ * For the future
+ * - look into handling of missing images
+*/ 
 const PersonCard = ({person}: PersonCardProps) => 
   <div className="PersonCard">
     <img src={person.avatar} alt="" className="PersonCard-img" />

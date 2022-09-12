@@ -15,14 +15,26 @@
 
 }
 
-.App-header {
-  height: 117px;
-}
-
 .App-header_image {
-  padding: 33px 0 0 193px;
+  padding: 10px;
 }
 
 .App-main {
-  padding: 0 30% 0 30%;
+  padding: 10%;
+}
+
+
+@media (min-width: 681px) {
+  
+  .App-header {
+    height: 117px;
+  }
+
+  .App-header_image {
+    padding: 33px 0 0 193px;
+  }
+
+  .App-main {
+    padding: 0 30% 0 30%;
+  }
 }

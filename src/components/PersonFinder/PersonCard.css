@@ -9,6 +9,8 @@
 .PersonCard-img {
   height: 96px;
   width: 96px;
+  background: #C4C4C4
+  
 }
 
 .PersonCard-header {
@@ -18,13 +20,29 @@
   font-size: 16px;
   line-height: 150%;
   color: #333333;
+  height: 24px;
+  margin: 0;
 }
 
+
+/* For the future: better way to hide description?*/
 .PersonCard-description {
+  display: none;
+}
+
+@media (min-width: 680px) {
+
+.PersonCard-description {
+  display: block;
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #666666;
+  height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 14px 0 0 0;
+}
 }

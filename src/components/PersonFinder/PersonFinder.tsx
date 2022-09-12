@@ -29,7 +29,11 @@ const PersonFinder = ({people}: PersonFinderProps) => {
     setSearchText(e.target.value);
   };
 
-  // TODO: wrap input with form?
+  /**
+   * For the future:
+   * - Enhance performance of search, noticed search lags when deleting characters from search term
+   * - loading indicator for slow results?
+   */
   return (
     <div>
       <label htmlFor="personSearch" className="visually-hidden">
