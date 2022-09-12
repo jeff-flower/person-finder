@@ -1,6 +1,8 @@
 import React, {ChangeEvent, useState, useMemo} from 'react';
 import PersonList from './PersonList';
 
+import './PersonFinder.css';
+
 export interface Person {
   id: number;
   name: string;
@@ -40,6 +42,7 @@ const PersonFinder = ({people}: PersonFinderProps) => {
         placeholder="Search in Air HQ"
         value={searchText}
         onChange={handleInputChange}
+        className="PersonFinder-input"
       />
       <PersonList people={filteredPeople}/>
     </div>
