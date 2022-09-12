@@ -29,16 +29,20 @@ const PersonFinder = ({people}: PersonFinderProps) => {
 
   // TODO: wrap input with form?
   return (
-    <section>
+    <div>
+      <label htmlFor="personSearch" className="visually-hidden">
+        Search in Air HQ
+      </label>
       <input
         type="search"
         name="personSearch"
+        id="personSearch"
         placeholder="Search in Air HQ"
         value={searchText}
         onChange={handleInputChange}
       />
       <PersonList people={filteredPeople}/>
-    </section>
+    </div>
   );
 }
 
