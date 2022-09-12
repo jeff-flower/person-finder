@@ -14,3 +14,15 @@
   color: #333333;
 
 }
+
+.App-header {
+  height: 117px;
+}
+
+.App-header_image {
+  padding: 33px 0 0 193px;
+}
+
+.App-main {
+  padding: 0 30% 0 30%;
+}

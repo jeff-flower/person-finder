@@ -1,3 +1,16 @@
+.PersonCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  height: 96px;
+}
+
+.PersonCard-img {
+  height: 96px;
+  width: 96px;
+}
+
 .PersonCard-header {
   font-family: 'Helvetica';
   font-style: normal;

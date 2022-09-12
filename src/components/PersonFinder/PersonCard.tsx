@@ -8,10 +8,12 @@ type PersonCardProps = {
 };
 
 const PersonCard = ({person}: PersonCardProps) => 
-  <div>
-    <img src={person.avatar} alt=""/>
-    <h2 className="PersonCard-header">{person.name}</h2>
-    <p className="PersonCard-description">{person.description}</p>
+  <div className="PersonCard">
+    <img src={person.avatar} alt="" className="PersonCard-img" />
+    <div>
+      <h2 className="PersonCard-header">{person.name}</h2>
+      <p className="PersonCard-description">{person.description}</p>
+    </div>
   </div>
 
 export default PersonCard;

@@ -1,3 +1,9 @@
+.PersonList {
+  margin-top: 50px;
+  padding: 0;
+}
+
 .PersonList-listitem {
   list-style: none;
+  margin-bottom: 24px;
 }

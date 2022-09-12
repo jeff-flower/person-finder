@@ -16,7 +16,7 @@ const PersonList = ({people}: PersonListProps) => {
   );
 
   return (
-    <ul>{personItems}</ul>
+    <ul className="PersonList">{personItems}</ul>
   );
 }
 
