@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/person-finder/static/css/main.e6c13ad2.css",
-    "main.js": "/person-finder/static/js/main.22e37c5c.js",
+    "main.css": "/person-finder/static/css/main.10e2001e.css",
+    "main.js": "/person-finder/static/js/main.c706fdb8.js",
     "static/js/787.88579e63.chunk.js": "/person-finder/static/js/787.88579e63.chunk.js",
     "static/media/rAir.svg": "/person-finder/static/media/rAir.dccda281dbda6462262dd236823ed1c3.svg",
     "index.html": "/person-finder/index.html",
-    "main.e6c13ad2.css.map": "/person-finder/static/css/main.e6c13ad2.css.map",
-    "main.22e37c5c.js.map": "/person-finder/static/js/main.22e37c5c.js.map",
+    "main.10e2001e.css.map": "/person-finder/static/css/main.10e2001e.css.map",
+    "main.c706fdb8.js.map": "/person-finder/static/js/main.c706fdb8.js.map",
     "787.88579e63.chunk.js.map": "/person-finder/static/js/787.88579e63.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.22e37c5c.js"
+    "static/css/main.10e2001e.css",
+    "static/js/main.c706fdb8.js"
   ]
 }
