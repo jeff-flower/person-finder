@@ -19,7 +19,9 @@ const PersonFinder = ({people}: PersonFinderProps) => {
   
   const filteredPeople = useMemo(() => {
     if (searchText) {
-      return people.filter((person: Person) => person.name.startsWith(searchText));
+      return people.filter((person: Person) => 
+        person.name.toLowerCase().includes(searchText.toLowerCase())
+      );
     }
 
     return [...people];
